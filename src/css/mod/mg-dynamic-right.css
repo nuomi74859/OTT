@@ -1,0 +1,429 @@
+@charset "UTF-8";
+html {
+  color: #999;
+  padding-top: 105px;
+  background: url("../image/global/bg.jpg") left top repeat-x #f06805;
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, button, textarea, p, blockquote, th, td, iframe {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset, img {
+  border: 0;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  color: #999 !important;
+}
+
+input[type="text"], textarea {
+  -webkit-appearance: none;
+}
+
+textarea {
+  overflow: auto;
+  resize: none;
+}
+
+h1, h2, h3, h4, h5, h6, input, textarea, select, button {
+  font-size: 100%;
+}
+
+img {
+  display: block;
+}
+
+body {
+  font: 12px/1.5 '微软雅黑','Helvetica Neue',Helvetica,Arial,Sans-serif !important;
+}
+
+a {
+  color: #222;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+  height: 0;
+  overflow: hidden;
+}
+
+em {
+  font-style: normal;
+}
+
+.hide-text {
+  text-indent: -9999px;
+  overflow: hidden;
+}
+
+.no-border {
+  border: none !important;
+}
+
+.no-bg {
+  background: none !important;
+}
+
+.min-h {
+  font-size: 1px;
+  line-height: 1px;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right !important;
+}
+
+.cb {
+  clear: both;
+}
+
+.cl {
+  clear: left;
+}
+
+.cr {
+  clear: right;
+}
+
+.tl {
+  text-align: left;
+}
+
+.tr {
+  text-align: right;
+}
+
+.tc {
+  text-align: center !important;
+}
+
+.pr {
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
+.pa {
+  position: absolute;
+}
+
+.z10 {
+  z-index: 10;
+}
+
+.hide {
+  display: none;
+}
+
+.text-dec {
+  text-decoration: none;
+}
+
+.mic_right {
+  width: 992px;
+  background: #f6f5f5;
+}
+
+.mic_right .page_btn {
+  width: 220px;
+  height: 54px;
+  margin: auto;
+  clear: both;
+}
+
+.mic_right .page_btn a {
+  display: block;
+  text-align: center;
+  line-height: 54px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #636363;
+  float: left;
+  width: 110px;
+  height: 54px;
+  text-decoration: none;
+}
+
+.mic_right .page_btn a:hover {
+  color: #ff8e2a;
+}
+
+.mic_right .page_btn a.disable {
+  color: #d9d8d8;
+}
+
+.mic_right.rank_01 {
+  padding-top: 40px;
+}
+
+.mic_right.rank_01 .cont {
+  padding: 0 45px;
+}
+
+.mic_right.rank_01 .cont ul {
+  width: 100%;
+  padding-top: 30px;
+  height: 144px;
+  overflow: hidden;
+}
+
+.mic_right.rank_01 .cont ul li {
+  float: left;
+  height: 36px;
+  line-height: 36px;
+  color: #666;
+  font-size: 18px;
+  background: url("/image/ico/dot.png") left center no-repeat;
+}
+
+.mic_right.rank_01 .cont ul li a {
+  display: block;
+  float: left;
+  height: 36px;
+  color: #666;
+  padding-left: 20px;
+  width: 630px;
+  overflow: Hidden;
+}
+
+.mic_right.rank_01 .cont ul li em {
+  text-align: right;
+  display: block;
+  float: left;
+  width: 117px;
+  margin-left: 110px;
+}
+
+.mic_right.rank_01 .page_btn {
+  padding-top: 20px;
+}
+
+.mic_right.rank_02 {
+  padding: 0 45px 0 55px;
+  width: 892px;
+}
+
+.mic_right.rank_02 .title {
+  display: block;
+  height: 40px;
+  width: 892px;
+  padding: 75px 0 16px 0;
+  border-bottom: 1px solid #9d9d9d;
+}
+
+.mic_right.rank_02 .title span {
+  display: block;
+  background: url("/image/ico/right01.png") no-repeat;
+  width: 218px;
+  height: 40px;
+  float: left;
+}
+
+.mic_right.rank_02 .cont p {
+  color: #505050;
+  font-size: 16px;
+  line-height: 36px;
+  text-indent: 2em;
+  padding-top: 38px;
+}
+
+.mic_right.rank_03 .cont {
+  padding: 28px 41px 28px 35px;
+}
+
+.mic_right.rank_03 .cont ul {
+  overflow: hidden;
+  height: 1011px;
+}
+
+.mic_right.rank_03 .cont ul li {
+  height: 252px;
+  border-bottom: 1px solid #d9d8d8;
+  width: 916px;
+}
+
+.mic_right.rank_03 .cont ul li img {
+  width: 253px;
+  height: 178px;
+  float: left;
+  border-radius: 10px;
+  margin-top: 31px;
+}
+
+.mic_right.rank_03 .cont ul li .txt {
+  width: 620px;
+  height: 178px;
+  float: right;
+  margin-top: 20px;
+}
+
+.mic_right.rank_03 .cont ul li .txt p {
+  width: 620px;
+  font-size: 16px;
+  line-height: 28px;
+  color: #636363;
+}
+
+.mic_right.rank_03 .cont ul li .txt p.title {
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: bold;
+}
+
+.mic_right.rank_04 {
+  padding: 40px 130px 40px 96px;
+  width: 766px;
+}
+
+.mic_right.rank_04 .cont {
+  width: 766px;
+}
+
+.mic_right.rank_04 .cont .title {
+  color: #ccc;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  width: 766px;
+  height: 30px;
+}
+
+.mic_right.rank_04 .cont ul {
+  margin-left: 27px;
+  border-left: 3px solid #d4d4d4;
+  padding-top: 20px;
+}
+
+.mic_right.rank_04 .cont ul li {
+  width: 680px;
+  padding: 0 0 20px 56px;
+}
+
+.mic_right.rank_04 .cont ul li p {
+  font-size: 16px;
+  line-height: 28px;
+  color: #505050;
+}
+
+.mic_right.rank_04 .cont ul li p.p_time {
+  font-weight: bold;
+  position: relative;
+  height: 28px;
+  width: 200px;
+}
+
+.mic_right.rank_04 .cont ul li p.p_time span {
+  display: block;
+  width: 57px;
+  height: 23px;
+  position: absolute;
+  background: url("/image/ico/right04.png") no-repeat;
+  left: -69px;
+}
+
+.mic_right.rank_05 {
+  width: 992px;
+  background: #f6f5f5;
+  padding-top: 60px;
+}
+
+.mic_right.rank_05 .cont {
+  width: 992px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.mic_right.rank_05 .cont .img1 {
+  width: 705px;
+  height: 392px;
+  padding: 9px 0 0 117px;
+}
+
+.mic_right.rank_05 .cont .img2 {
+  width: 787px;
+  height: 466px;
+  padding: 11px 0 11px 103px;
+}
+
+.mic_right.rank_05 .btn {
+  width: 270px;
+  height: 100px;
+  line-height: 100px;
+  padding: 0 42px 0 680px;
+  background: #f6f5f5;
+}
+
+.mic_right.rank_05 .btn p {
+  font-size: 18px;
+  color: #515151;
+}
+
+.mic_right.rank_05 .btn p span {
+  width: 180px;
+  float: left;
+}
+
+.mic_right.rank_05 .btn p a {
+  display: block;
+  width: 90px;
+  height: 48px;
+  float: left;
+  margin: 25px 0 0 0;
+  cursor: pointer;
+  background: url("/image/ico/ie/d3.jpg") no-repeat;
+}
+
+.mic_right.rank_05 .btn p a:hover {
+  background: url("/image/ico/ie/d4.jpg") no-repeat;
+}
+
+.mic_right.rank_06 {
+  width: 894px;
+  padding: 80px 49px 0 49px;
+}
+
+.mic_right.rank_06 .text {
+  padding-top: 20px;
+  width: 100%;
+}
+
+.mic_right.rank_06 .text li {
+  width: 100%;
+  color: #505050;
+  font-size: 16px;
+  line-height: 36px;
+}

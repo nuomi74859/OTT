@@ -1,0 +1,562 @@
+@charset "UTF-8";
+html {
+  color: #999;
+  padding-top: 105px;
+  background: url("../image/global/bg.jpg") left top repeat-x #f06805;
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, button, textarea, p, blockquote, th, td, iframe {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset, img {
+  border: 0;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  color: #999 !important;
+}
+
+input[type="text"], textarea {
+  -webkit-appearance: none;
+}
+
+textarea {
+  overflow: auto;
+  resize: none;
+}
+
+h1, h2, h3, h4, h5, h6, input, textarea, select, button {
+  font-size: 100%;
+}
+
+img {
+  display: block;
+}
+
+body {
+  font: 12px/1.5 '微软雅黑','Helvetica Neue',Helvetica,Arial,Sans-serif !important;
+}
+
+a {
+  color: #222;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+  height: 0;
+  overflow: hidden;
+}
+
+em {
+  font-style: normal;
+}
+
+.hide-text {
+  text-indent: -9999px;
+  overflow: hidden;
+}
+
+.no-border {
+  border: none !important;
+}
+
+.no-bg {
+  background: none !important;
+}
+
+.min-h {
+  font-size: 1px;
+  line-height: 1px;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right !important;
+}
+
+.cb {
+  clear: both;
+}
+
+.cl {
+  clear: left;
+}
+
+.cr {
+  clear: right;
+}
+
+.tl {
+  text-align: left;
+}
+
+.tr {
+  text-align: right;
+}
+
+.tc {
+  text-align: center !important;
+}
+
+.pr {
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
+.pa {
+  position: absolute;
+}
+
+.z10 {
+  z-index: 10;
+}
+
+.hide {
+  display: none;
+}
+
+.text-dec {
+  text-decoration: none;
+}
+
+.page_box1 {
+  width: 1190px;
+  height: 464px;
+  margin: auto;
+  position: relative;
+}
+
+.page_box1 .box1_img {
+  overflow: hidden;
+  width: 1190px;
+  height: 464px;
+}
+
+.page_box1 .box1_img .bg {
+  width: 100%;
+  height: 143px;
+  background: #000;
+  filter: alpha(opacity=50);
+  -moz-opacity: .5;
+  -khtml-opacity: .5;
+  opacity: .5;
+  position: absolute;
+  bottom: 0;
+  _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='//../image/ico/ie/libg.png');
+  _background-image: none;
+}
+
+.page_box1 .box1_img img {
+  width: 1190px;
+  height: 464px;
+}
+
+.page_box1 .box1_img li {
+  float: left;
+}
+
+.page_box1 .box1_change {
+  width: 1190px;
+  height: 143px;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+}
+
+.page_box1 .box1_change ul {
+  height: 107px;
+  padding: 18px 0 18px 112px;
+  background: url("/image/ico/page_box1.jpg") bottom repeat-x;
+}
+
+.page_box1 .box1_change ul li {
+  width: 141px;
+  height: 99px;
+  border-radius: 12px;
+  margin: 0 5px;
+  display: inline-block;
+  float: left;
+  cursor: pointer;
+  border: 4px solid transparent;
+  _border: 4px solid #000;
+}
+
+.page_box1 .box1_change ul li img {
+  display: block;
+  width: 141px;
+  height: 99px;
+  border-radius: 6px;
+}
+
+.page_box1 .box1_change ul li.on {
+  border: 4px solid #f18535;
+}
+
+.page_box2 {
+  width: 1190px;
+  height: 763px;
+  margin: auto;
+  background: #fff;
+}
+
+.page_box2 .box2_img {
+  width: 1190px;
+  height: 409px;
+  padding-top: 121px;
+  position: relative;
+}
+
+.page_box2 .box2_img .arrows {
+  display: block;
+  width: 36px;
+  height: 66px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 30%;
+}
+
+.page_box2 .box2_img .arrows.arrows_L {
+  background: url("/image/ico/arrows_L.png") center no-repeat;
+  _background: url("/image/ico/ie/arrows_L.png") center no-repeat;
+  left: 2%;
+}
+
+.page_box2 .box2_img .arrows.arrows_L:hover {
+  background: url("/image/ico/arrows1_L.png") center no-repeat;
+  _background: url("/image/ico/ie/arrows1_L.png") center no-repeat;
+}
+
+.page_box2 .box2_img .arrows.arrows_R {
+  background: url("/image/ico/arrows_R.png") center no-repeat;
+  _background: url("/image/ico/ie/arrows_R.png") center no-repeat;
+  right: 2%;
+}
+
+.page_box2 .box2_img .arrows.arrows_R:hover {
+  background: url("/image/ico/arrows1_R.png") center no-repeat;
+  _background: url("/image/ico/ie/arrows1_R.png") center no-repeat;
+}
+
+.page_box2 .box2_img ul {
+  width: 957px;
+  position: relative;
+  margin: auto;
+}
+
+.page_box2 .box2_img ul li {
+  float: left;
+  display: none;
+}
+
+.page_box2 .box2_img ul li.li {
+  display: block;
+  position: absolute;
+}
+
+.page_box2 .box2_img ul li.li img {
+  width: 100%;
+  height: 100%;
+}
+
+.page_box2 .box2_img ul li.li_left {
+  left: 0;
+  top: 54px;
+}
+
+.page_box2 .box2_img ul li.li_left img {
+  width: 521px;
+  height: 293px;
+}
+
+.page_box2 .box2_img ul li.li_left2 {
+  left: 52px;
+  top: 19px;
+  z-index: 1;
+}
+
+.page_box2 .box2_img ul li.li_left2 img {
+  width: 647px;
+  height: 364px;
+}
+
+.page_box2 .box2_img ul li.li_min {
+  left: 109px;
+  z-index: 2;
+  box-shadow: 4px 4px 57px 1px #010101;
+}
+
+.page_box2 .box2_img ul li.li_min img {
+  width: 728px;
+  height: 409px;
+  opacity: 1;
+}
+
+.page_box2 .box2_img ul li.li_right {
+  right: 52px;
+  top: 19px;
+  z-index: 1;
+}
+
+.page_box2 .box2_img ul li.li_right img {
+  width: 647px;
+  height: 364px;
+}
+
+.page_box2 .box2_img ul li.li_right2 {
+  right: 0;
+  top: 54px;
+}
+
+.page_box2 .box2_img ul li.li_right2 img {
+  width: 521px;
+  height: 293px;
+}
+
+.page_box2 .box2_change {
+  padding: 88px 0 106px 0;
+  height: 39px;
+}
+
+.page_box2 .box2_change ul {
+  width: 690px;
+  height: 39px;
+  overflow: hidden;
+  margin: auto;
+}
+
+.page_box2 .box2_change ul li {
+  float: left;
+  line-height: 39px;
+  font-size: 16px;
+  margin: 0 16px;
+  color: #686868;
+  cursor: pointer;
+}
+
+.page_box2 .box2_change ul li.on {
+  background: url("/image/ico/page_box2.jpg") bottom repeat-x;
+  color: #f18535;
+}
+
+.page_box3 {
+  width: 1190px;
+  margin: auto;
+  height: auto;
+}
+
+.page_box3 .bg {
+  width: 1190px;
+  position: relative;
+}
+
+.page_box3 .bg .span {
+  display: block;
+  background: url("/image/ico/page_box3.png") no-repeat;
+  _background: url("/image/ico/ie/page_box3.png") no-repeat;
+  width: 170px;
+  height: 68px;
+  line-height: 68px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+  padding-bottom: 19px;
+  position: absolute;
+  left: 97px;
+  cursor: default;
+  z-index: 3;
+}
+
+.page_box3 .bg .text {
+  position: absolute;
+}
+
+.page_box3 .bg .text h1 {
+  color: #333;
+  font-size: 36px;
+  line-height: 44px;
+}
+
+.page_box3 .bg .text p {
+  font-size: 16px;
+  line-height: 30px;
+  color: #666;
+}
+
+.page_box3 .bg .box_img {
+  position: absolute;
+}
+
+.page_box3 .box3_01 {
+  height: 766px;
+  background: url("/image/ico/box_bg3.jpg") no-repeat;
+}
+
+.page_box3 .box3_01 .cont_01 {
+  width: 892px;
+  height: 446px;
+  padding-top: 190px;
+  margin: auto;
+}
+
+.page_box3 .box3_01 .cont_01 .box_img {
+  top: 190px;
+  left: 148px;
+}
+
+.page_box3 .box3_02 {
+  height: 767px;
+  background: url("/image/ico/box_bg2.jpg") no-repeat;
+}
+
+.page_box3 .box3_02 .cont_02 {
+  position: relative;
+  height: 800px;
+}
+
+.page_box3 .box3_02 .cont_02 .arrows {
+  display: block;
+  width: 36px;
+  height: 66px;
+  position: absolute;
+  bottom: 36%;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.page_box3 .box3_02 .cont_02 .arrows.arrows_L {
+  background: url("/image/ico/arrows_L.png") center no-repeat;
+  _background: url("/image/ico/ie/arrows_L.png") center no-repeat;
+  left: 5%;
+  display: none;
+}
+
+.page_box3 .box3_02 .cont_02 .arrows.arrows_L:hover {
+  background: url("/image/ico/arrows1_L.png") center no-repeat;
+  _background: url("/image/ico/ie/arrows1_L.png") center no-repeat;
+}
+
+.page_box3 .box3_02 .cont_02 .arrows.arrows_R {
+  background: url("/image/ico/arrows_R.png") center no-repeat;
+  _background: url("/image/ico/ie/arrows_R.png") center no-repeat;
+  right: 5%;
+  display: none;
+}
+
+.page_box3 .box3_02 .cont_02 .arrows.arrows_R:hover {
+  background: url("/image/ico/arrows1_R.png") center no-repeat;
+  _background: url("/image/ico/ie/arrows1_R.png") center no-repeat;
+}
+
+.page_box3 .box3_02 .cont_02 li {
+  float: left;
+}
+
+.page_box3 .box3_02 .cont_02 li .text {
+  top: 78px;
+  z-index: 2;
+}
+
+.page_box3 .box3_02 .cont_02 li .text h1 {
+  padding-bottom: 38px;
+  width: 1190px;
+  text-align: center;
+}
+
+.page_box3 .box3_02 .cont_02 li .text p {
+  width: 730px;
+  margin: auto;
+}
+
+.page_box3 .box3_02 .cont_02 li .box_img {
+  bottom: 20px;
+  width: 100%;
+}
+
+.page_box3 .box3_02 .cont_02 li .box_img img {
+  margin: auto;
+  padding-left: 100px;
+}
+
+.page_box3 .box3_03 {
+  height: 767px;
+  background: url("/image/ico/box_bg3.jpg") no-repeat;
+}
+
+.page_box3 .box3_03 .text {
+  left: 160px;
+  top: 110px;
+  z-index: 1;
+}
+
+.page_box3 .box3_03 .text h1 {
+  padding-bottom: 26px;
+  width: 570px;
+  text-align: right;
+}
+
+.page_box3 .box3_03 .text p {
+  width: 580px;
+}
+
+.page_box3 .box3_03 .box_img {
+  top: 0;
+}
+
+.page_box3 .box3_04 {
+  background: url("/image/ico/box_bg4.jpg") no-repeat;
+  height: 766px;
+}
+
+.page_box3 .box3_04 .text {
+  right: 63px;
+  top: 146px;
+  z-index: 1;
+}
+
+.page_box3 .box3_04 .text h1 {
+  padding-bottom: 34px;
+  width: 390px;
+}
+
+.page_box3 .box3_04 .text p {
+  width: 390px;
+}
+
+.page_box3 .box3_04 .box_img {
+  top: 0;
+}
