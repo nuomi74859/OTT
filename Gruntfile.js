@@ -111,6 +111,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-imagemin');
 
 
-    grunt.registerTask('default', ['concat', 'uglify','sass','compass','htmlmin','imagemin']);
+    grunt.registerTask('default', ['uglify','compass','htmlmin','imagemin']);
 
 };
