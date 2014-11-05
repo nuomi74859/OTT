@@ -6,8 +6,23 @@
     <title>芒果TV</title>
     <link rel="stylesheet" href="../css/global.css" charset="utf-8"/>
     <link rel="stylesheet" href="../css/mgtv-index.css" charset="utf-8"/>
+    <style>
+        #top {
+            width:100px;
+            height: 100px;
+            position: fixed;
+            margin-left: 50%;
+            left: 630px;
+            bottom: 100px;
+            background: #000000;
+            cursor:pointer;
+        }
+    </style>
 </head>
 <body>
+<div id="top">
+    我勒个去
+</div>
 <!--header-->
 <div class="global-header clearfix"><a class="logo-ico hide-text" href="/">芒果TV</a>
     <p class="header-nav clearfix"><a class="sel" href="index.html">首页</a> <a href="vision.html">芒果视界</a> <a href="inside.html">芒果TV inside</a> <a href="mov.html">芒果动态</a> <!--<a href="#">芒果社区</a> --> </p>
@@ -82,7 +97,7 @@
     <div class="newslist-box fr">
         <div class="newslist-til">
              <h2>论坛热帖</h2>
-            <a href="#" target="_blank">更多</a>
+            <a href="#" target="_blank">进入论坛</a>
         </div>
         <dl class="clearfix">
             <dt><a href="#" target="_blank"> <img src="../image/img/1-3.jpg"></a></dt>
@@ -106,7 +121,10 @@
             让您永远不会错过精彩瞬间，最新最热影视内容完美呈现 <br>
             简单易用，一切无需学习 </p>
     </div>
-    <div class="tv_box"><img src="../image/img/14.jpg"/> <a href="http://www.hunantv.com/v/5/340/c/635449.html" target="_blank"></a></div>
+    <div class="tv_box">
+        <img src="../image/img/14.jpg"/>
+        <a href="javascript:void(0)"></a>
+    </div>
 </div>
 <!--<div class="index_scroll scroll_01">
   <div class="scroll_img">
@@ -199,7 +217,7 @@
         'DEV': true,
         'ROOT': '/js',
         'PUBROOT': 'http://honey.hunantv.com/honey/src'
-    })
+    });
 
     honey.go(["lib_jquery", //为了看效果，暂时用到本地的jquery
         "mod_nav-slider",
@@ -213,7 +231,7 @@
             list: ".ul_img",
             pagination: ".ul_change",
             activeClass: "on"
-        })
+        });
 
         $.each($(".index_scroll"), function (index, item) {
             H.arrowSlider({
@@ -225,23 +243,34 @@
                 activeClass: "",
                 loop: true
             })
-        })
+        });
 
 
-        var options = {  
-        useEasing: true,
-          useGrouping: true,
-          separator: ',',
-          decimal: '.'
-    }, currentNum
+        var options = {
+            useEasing: true,
+            useGrouping: true,
+            separator: ',',
+            decimal: '.'
+        }, currentNum;
 
-    setInterval(function () {
-        currentNum = $("#watch_num").html().replace(/,/g, "")
-        var targetNum = parseInt(currentNum) + Math.ceil(Math.random() * 1000)
-        demo = new countUp("watch_num", currentNum, targetNum, 0, 2.5, options)
-        currentNum = targetNum
-        demo.start();
-    }, 3000)
-    })
+        setInterval(function () {
+            currentNum = $("#watch_num").html().replace(/,/g, "");
+            var targetNum = parseInt(currentNum) + Math.ceil(Math.random() * 1000);
+            demo = new countUp("watch_num", currentNum, targetNum, 0, 2.5, options);
+            currentNum = targetNum;
+            demo.start();
+        }, 3000);
+
+        var myVideo = '<embed src="http://i1.hunantv.com/ui/swf/share/player.swf?tid=2577&cid=1007107&fid=1018348" quality="high" width="932" height="523" align="middle" allowScriptAccess="always" allowfullscreen="true" type="application/x-shockwave-flash"></embed>';
+        $('.tv_box').click(function(){
+            $(this).html(myVideo);
+        });
+
+        $('#top').click(function(){
+            $('html,body').animate({
+                'scrollTop':0
+            },200);
+        });
+    });
 </script>
 </html>
