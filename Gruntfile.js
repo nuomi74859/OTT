@@ -3,6 +3,7 @@
  */
 module.exports = function(grunt) {
 
+    require('load-grunt-tasks')(grunt);
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
         concat: {
@@ -16,7 +17,7 @@ module.exports = function(grunt) {
         },
         uglify: {
             options: {
-                mangle:true,
+                mangle: false,
                 report:'min',
                 banner: '/*! <%= pkg.name %> <%= grunt.template.today("dd-mm-yyyy") %> */\n'
             },
@@ -29,23 +30,23 @@ module.exports = function(grunt) {
                 }]
             }
         },
-        sass: {
-            options: {
-                style:'compressed'
-            },
-            dist: {
-                files:[{
-                    expand:true,
-                    cwd:'src',
-                    src:'**/*.css',
-                    dest:'',
-                    ext:'.css'
-                }]
-            }
-        },
+//        sass: {
+//            options: {
+//                style:'compressed'
+//            },
+//            dist: {
+//                files:[{
+//                    expand:true,
+//                    cwd:'src',
+//                    src:'**/*.scss',
+//                    dest:'',
+//                    ext:'.css'
+//                }]
+//            }
+//        },
         compass: {
             options: {
-                sassDir:'src/sass',
+                sassDir:'src/css',
                 cssDir:'css',
                 imagesDir:'images',
                 outputStyle:'compressed',
@@ -66,7 +67,6 @@ module.exports = function(grunt) {
                     mangle:false
                 },
                 minifyCSS:true
-//                conservativeCollapse:true
             },
             dist: {
                 files:[{
@@ -85,11 +85,26 @@ module.exports = function(grunt) {
                 files: [{
                     expand:true,
                     cwd:'src',
-                    src:['**/*.{png,jpg,jpeg}'],
+                    src:['**/*.{png,jpg,jpeg,ico}'],
                     dest:''
                 }]
             }
 
+        },
+        connect: {
+            options: {
+                port:8000,
+                hostname:'*',
+                debug:true,
+//                keepalive:true,
+                livereload:3000
+            },
+            server: {
+                options: {
+                    open:true,
+                    base:''
+                }
+            }
         },
         watch: {
             uglify: {
@@ -103,19 +118,30 @@ module.exports = function(grunt) {
             htmlmin: {
                 files:['src/**/*.html'],
                 tasks:['htmlmin']
+            },
+            livereload: {
+                options: {
+                    livereload:'<%=connect.options.livereload%>'
+                },
+                files: [
+                    '*.html',
+                    'css/{,*/}*.css',
+                    'js/{,*/}*.js'
+                ]
             }
         }
     });
 
-    grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-contrib-concat');
-    grunt.loadNpmTasks('grunt-contrib-sass');
-    grunt.loadNpmTasks('grunt-contrib-compass');
-    grunt.loadNpmTasks('grunt-contrib-htmlmin');
-    grunt.loadNpmTasks('grunt-contrib-imagemin');
+//    grunt.loadNpmTasks('grunt-contrib-uglify');
+//    grunt.loadNpmTasks('grunt-contrib-watch');
+//    grunt.loadNpmTasks('grunt-contrib-concat');
+//    grunt.loadNpmTasks('grunt-contrib-sass');
+//    grunt.loadNpmTasks('grunt-contrib-compass');
+//    grunt.loadNpmTasks('grunt-contrib-htmlmin');
+//    grunt.loadNpmTasks('grunt-contrib-imagemin');
+//    grunt.loadNpmTasks('grunt-contrib-connect');
 
 
     grunt.registerTask('default', ['uglify','compass','htmlmin','imagemin']);
-
+    grunt.registerTask('server',['connect','watch']);
 };

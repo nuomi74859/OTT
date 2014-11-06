@@ -29,12 +29,12 @@ honey.def("lib:jquery", function(H) {
 
 		if (opt.autoCreat) {
 			for (var i = 0; i < maxLength; i++) {
-				pHTML.push("<li></li>")
+				pHTML.push('<li>'+(i+1)+'</li>')
 			}
 			pagination.empty().html(pHTML.join(""));
 
 			pItem = pagination.find("li")
-			pItem.width(c.width() / maxLength)
+//			pItem.width(c.width() / maxLength)
 		} else {
 			pItem = pagination.find("li")
 		}

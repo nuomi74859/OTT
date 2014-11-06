@@ -161,64 +161,7 @@ em {
   overflow: hidden;
 }
 
-.index_focus .focus_text {
-  position: absolute;
-  width: 330px;
-  height: 300px;
-  right: 0;
-  top: 200px;
-}
 
-.index_focus .focus_text ul {
-  width: 330px;
-}
-
-.index_focus .focus_text ul li {
-  color: #fff;
-  width: 330px;
-  padding-bottom: 15px;
-}
-
-.index_focus .focus_text ul li span {
-  font-size: 16px;
-}
-
-.index_focus .focus_text ul li p {
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.index_focus .focus_text ul li p.p_01 {
-  font-size: 20px;
-}
-
-.index_focus .focus_text ul li p.p_02 {
-  height: 45px;
-  line-height: 46px;
-}
-
-.index_focus .focus_text ul li p.p_02 b {
-  float: left;
-  font-size: 28px;
-  padding: 0;
-  font-weight: bold;
-}
-
-.index_focus .focus_text ul li p.p_02 span {
-  background: url("/image/ico/hour.png") right no-repeat;
-  width: 41px;
-  height: 45px;
-  display: block;
-  float: left;
-  padding-left: 14px;
-  _background: url("/image/ico/ie/hour.png") right no-repeat;
-}
-
-.index_focus .focus_text ul li b {
-  padding-left: 10px;
-  font-size: 20px;
-  font-weight: normal;
-}
 
 .index_focus .ul_bg {
   width: 100%;

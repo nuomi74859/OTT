@@ -1,5 +1,5 @@
 {
-    "name": "imgoUser",
+    "name": "ott",
     "version": "0.0.1",
     "private": true,
     "dependencies": {
@@ -10,6 +10,8 @@
         "grunt-contrib-compass":"*",
         "grunt-contrib-sass":"*",
         "grunt-contrib-htmlmin":"*",
-        "grunt-contrib-imagemin":"*"
+        "grunt-contrib-imagemin":"*",
+        "grunt-contrib-connect":"*",
+        "load-grunt-tasks":"*"
     }
 }
