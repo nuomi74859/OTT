@@ -214,7 +214,7 @@ em {
 
 .index_focus .ul_change li:hover, .index_focus .ul_change li.on {
   background: #ff8e2a;
-  margin: 0;
+//  margin: 0;
 }
 
 .index_focus .ul_change li.on:after {
@@ -575,4 +575,113 @@ em {
   width: 730px;
   text-align: center;
   margin: auto;
+}
+
+
+//---------------------二期----------------
+
+.ott-warp {
+  width: 1190px;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  background: #EDEDED;
+}
+.ow {
+  height: 254px;
+  float: left;
+  overflow: hidden;
+}
+.ow-1 {
+  width: 860px;
+}
+
+.owp-op {
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: absolute;
+  top:0;
+  left: 0;
+  text-align: center;
+  background: #000000;
+  background: rgba(0,0,0,0.8);
+}
+
+.ow-p {
+  width: 253px;
+  height: 178px;
+  position: relative;
+  float:left;
+  margin-left: 27px;
+  margin-top: 37px;
+  border-radius: 10px;
+  background: darkgray;
+  overflow: hidden;
+  cursor: pointer;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+  &:hover {
+    .owp-op {
+      display: block;
+    }
+  }
+}
+
+.op-text {
+  display:inline-block;
+  *display:inline;
+  *zoom:1;
+  margin: {
+    top: 58px;
+  };
+  text-align: right;
+  h2 {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 100;
+  }
+  p {
+    color: #EB8135;
+    font-size: 16px;
+  }
+}
+.ow-2 {
+  width: 330px;
+  position: relative;
+  background: url("/image/temp.jpg") no-repeat;
+}
+#watch_num {
+  position: absolute;
+  bottom: 53px;
+  font-size: 27px;
+  left: 40px;
+  font-weight: 100;
+  letter-spacing: 6px;
+  color: black;
+}
+
+.index_focus {
+  .ul_change {
+    width: auto;
+    height: auto;
+    top: auto;
+    left: auto;
+    right: 30px;
+    bottom: 20px;
+    li {
+      width: auto;
+      padding: 10px;
+      margin-left:10px;
+      text-align: center;
+      background: black;
+      background: rgba(0,0,0,0.8);
+      font-size: 16px;
+      line-height: 16px;
+      color: #ffffff;
+    }
+  }
 }

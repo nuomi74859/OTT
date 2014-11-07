@@ -2,15 +2,34 @@
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8" />
-<meta name="description" content="芒果TV">
-<title>芒果TV——新闻</title>
+<meta name="description" content="芒果TV,芒果tv,互联网电视,ott,芒果互联网电视">
+<meta name="renderer" content="webkit">
+<title>芒果互联网电视</title>
 <link rel="stylesheet" href="../css/global.css" type="text/css" media="screen" charset="utf-8" />
 <link rel="stylesheet" href="../css/mgtv-news.css" type="text/css" media="screen" charset="utf-8" />
 </head>
 <body>
+<!--返回头部-->
+<div id="top">
+    <img src="/image/arrowTop.png">
+</div>
 <!--header-->
 <div class="global-header clearfix"> <a class="logo-ico hide-text" href="#">芒果TV</a>
-  <p class="header-nav clearfix"> <a href="index.html">首页</a> <a href="vision.html">特色内容</a> <a href="inside.html">合作产品</a> <a class="sel" href="mov.html">关于我们</a>   <!--<a href="#">芒果社区</a> --> </p>
+    <p class="header-nav clearfix">
+        <a href="index.html">首页</a>
+        <a href="vision.html">特色内容</a>
+        <a href="inside.html">合作产品</a>
+        <a class="sel" href="mov.html">关于我们</a>
+        <a href="#">粉丝论坛</a>
+        <a href="/inside.html#a15">
+            芒果嗨Q
+            <img src="/image/ico/hot.png">
+        </a>
+        <a href="/inside.html#a3">
+            TCL芒果TV+
+            <img src="/image/ico/hot.png">
+        </a>
+    </p>
   <!--<div class="p-search clearfix">-->
     <!--<p class="search-con">-->
       <!--<input type="text" class="int-txt">-->
@@ -48,24 +67,24 @@
 </div>
 <!--footer-->
 <div class="footer-box clearfix">
-  <ul class="clearfix">
-    <li>
-      <h2>关于：</h2>
-      <p> <span><a href="/mov.html#intro">关于我们</a><a href="/mov.html#contact">联系我们</a> </span> <!-- <span><a href="#">版权声明</a><a href="#">友情链接</a> </span> --></p>
-    </li>
-    <li>
-      <h2>芒果网络生态圈：</h2>
-      <p> <span><a href="http://www.hunantv.com">芒果TV</a><a href="#">芒果圈</a> </span> <span><a href="#">金鹰网</a><a href="#">芒果游戏</a> </span> </p>
-    </li>
-    <li class="cla-1">
-      <h2>关注我们：</h2>
-      <p> <span><a class="sina" href="http://weibo.com/hunantv?topnav=1&wvr=5&topsug=1">新浪微博</a> </span> <span><a class="baidu" href="http://tieba.baidu.com/f?kw=%C3%A2%B9%FBtv&fr=ala0">百度贴吧</a> </span> <span><a class="weixin" href="#">官方微信</a> </span> <em></em> </p>
-    </li>
-    <li class="lianxi">
-      <p class="phone">: 400-677-0707</p>
-      <p class="phone-mes">仅收市话费，周一至周日全天在线</p>
-      <a class="lianxi-btn hide-text" href="#">24小时在线客服</a> </li>
-  </ul>
+    <ul class="clearfix">
+        <li>
+            <h2>关于：</h2>
+            <p> <span><a href="/mov.html#intro">关于我们</a><a href="/mov.html#contact">联系我们</a>  </span><!-- <span><a href="#">版权声明</a><a href="#">友情链接</a> </span> --></p>
+        </li>
+        <li>
+            <h2>芒果网络生态圈：</h2>
+            <p> <span><a href="http://zixun.hunantv.com/">湖南卫视</a><a href="http://www.hunantv.com/">芒果TV</a> </span> <span><a href="http://www.eemedia.cn/">天娱传媒</a><a href="http://www.vfund.org/">芒果V基金</a> </span> </p>
+        </li>
+        <li class="cla-1">
+            <h2>关注我们：</h2>
+            <p> <span><a class="sina" href="http://weibo.com/hunantv?topnav=1&wvr=5&topsug=1">新浪微博</a> </span> <span><a class="baidu" href="http://tieba.baidu.com/f?kw=%C3%A2%B9%FBtv&fr=ala0">百度贴吧</a> </span> <span><a class="weixin" href="javascript:void(0)">官方微信</a> </span> <em></em> </p>
+        </li>
+        <li class="lianxi">
+            <p class="phone">: 400-677-0707</p>
+            <p class="phone-mes">仅收市话费，周一至周日全天在线</p>
+            <a class="lianxi-btn hide-text" href="javascript:void(0)">24小时在线客服</a> </li>
+    </ul>
 </div>
 <div class="footer-mes clearfix">Copyright 2006-2014 hunantv.com Corporation,All Rights Reserved <br>
   湖南快乐阳光互动娱乐传媒有限公司 版权所有 <br>
@@ -115,6 +134,23 @@ honey.go(["lib_jquery", "mod_3d-slider","tools_search"].join(","), function() {
             activeClass: "on",
             showNum: 3
         })
+
+        //返回头部
+        $('#top').click(function(){
+            $('html,body').animate({
+                'scrollTop':0
+            },200);
+        });
+
+        $(window).scroll(function(){
+            var st = $(document).scrollTop();
+            if(st >= 200) {
+                $('#top').fadeIn();
+            }
+            else {
+                $('#top').fadeOut();
+            }
+        });
 
 })
 </script>

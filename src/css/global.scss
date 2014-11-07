@@ -165,7 +165,7 @@ em {
 .global-header .logo-ico {
   display: block;
   overflow: Hidden;
-  width: 100px;
+  width: 198px;
   height: 97px;
   float: left;
   background: url("/image/global/logo.png") 0 0 no-repeat;
@@ -176,7 +176,7 @@ em {
   width: auto;
   float: left;
   line-height: 97px;
-  overflow: Hidden;
+//  overflow: Hidden;
   padding: 0 20px;
 }
 
@@ -417,4 +417,30 @@ em {
   margin-top: 20px;
   cursor: default;
   background: url("/image/global/keifu.png") 0 0 no-repeat;
+}
+
+
+//---------------------二期----------------
+#top {
+  width:auto;
+  height: auto;
+  display: none;
+  position: fixed;
+  margin-left: 50%;
+  left: 630px;
+  bottom: 100px;
+  background: #000000;
+  cursor:pointer;
+}
+.header-nav {
+  a {
+    position: relative;
+    img {
+      width: 30px;
+      height: auto;
+      position: absolute;
+      top:25px;
+      right: -30px;
+    }
+  }
 }
